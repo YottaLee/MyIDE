@@ -1,0 +1,22 @@
+#exitBtn:hover{
+    -fx-effect: dropshadow(gaussian, rgba(255,0,0,0.5), 8, 0.5, 0, 0);
+}
+#logup:hover{
+    -fx-cursor: hand;
+}
+.button:hover{
+    -fx-cursor: hand;
+}
+#loginBtn{
+    -fx-pref-height: 30px;
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(0,0,0,0.5);
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+}
+#loginBtn:hover{
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 2, 0.5, 0, 1);
+}
+#loginBtn:pressed{
+    -fx-effect: null;
+}

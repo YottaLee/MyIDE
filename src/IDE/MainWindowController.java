@@ -22,8 +22,8 @@ public class MainWindowController {
    }
 
    @FXML void onExecutwClick(){
-       Compiler compiler = new Compiler(codeTextArea.getText(),inputTextArea.getText());
-       outputTextArea.setText(compiler.compile(0));
+       BFCompiler BFCompiler = new BFCompiler(codeTextArea.getText(),inputTextArea.getText());
+       outputTextArea.setText(BFCompiler.compile(0));
    }
 
     @FXML void onExit() {

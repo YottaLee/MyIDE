@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Created by wenxi on 2017/5/4.
  */
-public class Compiler {
+public class BFCompiler {
 
     String input;
     String code;
@@ -22,7 +22,7 @@ public class Compiler {
     @param code 代码
     @param input 输入数据
      */
-    public  Compiler(String code,String input){
+    public BFCompiler(String code, String input){
         this.code = code;
         this.input = input;
         codes=this.code.toCharArray();
@@ -98,8 +98,8 @@ public class Compiler {
     }
 
     public static void main(String[] args) {
-        Compiler compiler=new Compiler("++++[>++++[>+++<-]<-]>>.","");
-        String a=compiler.compile(0);
+        BFCompiler BFCompiler =new BFCompiler("++++[>++++[>+++<-]<-]>>.","");
+        String a= BFCompiler.compile(0);
         System.out.println(a);
     }
 }

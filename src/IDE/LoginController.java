@@ -37,20 +37,29 @@ public class LoginController  {
         });
     }
 
-    public void onLoginBtn(ActionEvent actionEvent) {
-        if(userNameText.getText().equals("admin")&&(psdText.getText().equals("123456"))) {
-            Platform.runLater(() -> {
-                userNameText.getScene().getWindow().hide();
-                new MainWindow();
-            });
-        }
+    public void onLoginBtn(ActionEvent actionEvent) throws IOException {
+        check(userNameText.getText(),psdText.getText());
     }
 
 
     /*
     检查用户名与密码
      */
-    public boolean check(String userName,String psd){
-        return false;
+    public void check(String userName,String psd) throws IOException {
+
+        if(!User.isExisted(userName)){
+            psdText.clear();
+            psdText.setPromptText("该用户不存在，请注册");
+        }else {
+            if(User.chechInfo(userName,psd)){
+                Platform.runLater(()->{
+                    new MainWindow();
+                    psdText.getScene().getWindow().hide();
+                });
+            }else {
+                psdText.clear();
+                psdText.setPromptText("密码错误");
+            }
+        }
     }
 }

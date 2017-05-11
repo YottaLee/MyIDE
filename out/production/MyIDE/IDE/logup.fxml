@@ -16,7 +16,7 @@
     <Label alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" layoutX="33.0" layoutY="172.0" prefHeight="30.0" prefWidth="100.0" text="密码：" textAlignment="RIGHT" textOverrun="ELLIPSIS" />
     <TextField fx:id="userNameText" layoutX="140.0" layoutY="120.0" prefWidth="200.0" promptText="" />
     <PasswordField fx:id="psdText" layoutX="140.0" layoutY="173.0" prefWidth="200.0" promptText="" />
-    <Button fx:id="logupBtn" layoutX="282.0" layoutY="293.0" mnemonicParsing="false" onAction="#onLogupBtn" text="Logup" />
+    <Button fx:id="logupBtn" layoutX="282.0" layoutY="293.0" mnemonicParsing="false" onAction="#onLogupBtn" text="Sing up" />
     <Label layoutX="165.0" layoutY="359.0" text="Nokia IDE" textAlignment="LEFT" textFill="#9f9f9f" />
     <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#onExitBtn" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color:lightgreen;&#10;-fx-background-radius:15;" text="" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
       <tooltip>
